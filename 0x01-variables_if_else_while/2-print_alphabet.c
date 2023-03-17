@@ -12,8 +12,8 @@ int i = 0;
 while (i < 26)
 {
 putchar(str[i]);
-putchar('\n');
 i++;
 }
+putchar('\n');
 	return (0);
 }
