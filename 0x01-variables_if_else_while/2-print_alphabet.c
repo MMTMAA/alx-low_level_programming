@@ -11,7 +11,7 @@ char str[100] = "abcdefghijklmnopqrstuvwxyz";
 int i = 0;
 while (i < strlen(str))
 {
-putchar(str[i]'\n');
+putchar(str[i]+"\n");
 i++;
 }
 	return (0);
