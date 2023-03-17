@@ -7,9 +7,9 @@
  */
 int main(void)
 {
-char str[100] = "abcdefghijklmnopqrstuvwxyz";
+char str[26] = "abcdefghijklmnopqrstuvwxyz";
 int i = 0;
-while (i < strlen(str))
+while (i < 26)
 {
 putchar(str[i]);
 putchar('\n');
