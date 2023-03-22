@@ -1,7 +1,7 @@
 #include "main.h"
 /**
  * _islower - check the code.
- * c - dcskck
+ * @c - dcskck
  * Return: Always 0.
  */
 int _islower(int c)
