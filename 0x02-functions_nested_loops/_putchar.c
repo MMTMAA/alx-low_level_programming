@@ -1,4 +1,6 @@
 #include "main.h"
+#include <stdio.h>
+#include <string.h>
 #include <unistd.h>
 /**
  * main - check the code
@@ -7,12 +9,6 @@
  */
 int _putchar(char c)
 {
-char str[7] = "_putchar";
-int i = 0;
-while (i < 8)
-{
-putchar(str[i]);
-i++;
-}
-putchar('\n');
+putchar(c);
+return (0);
 }
