@@ -36,7 +36,7 @@ _putchar(n + '0');
 _putchar(44);
 _putchar(32);
 }
-i--;
+n--;
 }
 }
 }
