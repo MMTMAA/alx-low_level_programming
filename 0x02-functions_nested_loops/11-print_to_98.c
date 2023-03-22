@@ -1,4 +1,5 @@
 #include "main.h"
+#include <stdio.h>
 /**
  * print_to_98 - Checks for lowercase charcters
  * @n: The characters to be checked
@@ -11,13 +12,11 @@ while (n <= 98)
 {
 if (n == 98)
 {
-_putchar(n + '0');
+printf("%d, ", n);
 }
 else
 {
-_putchar(n + '0');
-_putchar(44);
-_putchar(32);
+printf("%d, ", n);
 }
 n++;
 }
@@ -28,15 +27,13 @@ while (n >= 98)
 {
 if (n == 98)
 {
-_putchar(n + '0');
+printf("%d, ", n);
 }
 else
 {
-_putchar(n + '0');
-_putchar(44);
-_putchar(32);
+printf("%d, ", n);
 }
-n--;
+i--;
 }
 }
 }
