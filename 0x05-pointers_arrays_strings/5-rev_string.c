@@ -1,21 +1,18 @@
 #include "main.h"
 /**
- * print_rev - sdhfjlsd
- * @s: lhdfgljdhj
+ * rev_string - jshdfkj
+ * @s: dkfgl
  */
-void print_rev(char *s)
+void rev_string(char *s)
 {
-int length = 0;
-int i;
-while (*s != '\0')
+int l = 0;
+while (s[l] != '\0')
 {
-length++;
-s++;
+l++;
 }
-for (i = length; i > 0; i--)
+for (l -= 1; l >= 0; l--)
 {
-_putchar(*s);
-s--;
+_putchar(s[l]);
 }
 _putchar('\n');
 }
