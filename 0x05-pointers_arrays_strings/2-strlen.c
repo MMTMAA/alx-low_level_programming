@@ -2,7 +2,7 @@
 /**
  * _strlen - jhdfjs
  * @s: vfjjldf
- * return : fklvdlkfjm
+ * Return: fklvdlkfjm
  */
 int _strlen(char *s)
 {
