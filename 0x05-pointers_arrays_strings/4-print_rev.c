@@ -10,7 +10,7 @@ while (s[l] != '\0')
 {
 l++;
 }
-for (l -= 1; l >= 0; c--)
+for (l -= 1; l >= 0; l--)
 {
 _putchar(s[l]);
 }
