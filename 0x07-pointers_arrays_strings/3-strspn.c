@@ -9,28 +9,18 @@ unsigned int _strspn(char *s, char *accept)
 {
 unsigned int i = 0;
 unsigned int j = 0;
-unsigned int x = 0;
-unsigned int y = 0;
-unsigned int z = 0;
+unsigned int sum = 0;
 while (s[i] != '\0')
 {
-i++;
-}
-
 while (accept[j] != '\0')
 {
+if (s[i] == accept[j])
+{
+sum++;
+}
 j++;
 }
-
-for (x = 0; x <= j; x++)
-{
-for (y = 0; y <= i; y++)
-{
-if (s[y] == accept[x])
-{
-z++;
+i++;
 }
-}
-}
-return (z);
+return (sum);
 }
