@@ -13,7 +13,7 @@ while (s[i] != '\0')
 {
 while (accept[j] != '\0')
 {
-if (s[i] == accept[j])
+if (*s == accept[j])
 {
 return (s);
 }
