@@ -7,9 +7,8 @@
  * @argv: dfgdf
  * Return: hjkk
  */
-int main(int argc, char *argv[])
+int main(int argc argc __attribute__((unused)), char *argv[])
 {
-(void) argv;
 int i = argc - 1;
 printf("%d\n", i);
 return (0);
