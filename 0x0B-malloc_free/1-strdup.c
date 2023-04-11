@@ -20,7 +20,7 @@ len = strlen(str);
 p = malloc(sizeof(char) * len);
 while (i < len)
 {
-p[i] = str[i]
+p[i] = str[i];
 i++;
 }
 return (p);
