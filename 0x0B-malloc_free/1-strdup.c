@@ -18,6 +18,10 @@ return (NULL);
 
 len = strlen(str);
 p = malloc(sizeof(char) * (len + 1));
+
+if (p == NULL)
+return (NULL);
+
 while (i < len)
 {
 p[i] = str[i];
