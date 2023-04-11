@@ -20,6 +20,8 @@ if (s1 == NULL)
 s1 = "";
 if (s2 == NULL)
 s2 = "";
+if (s1 == NULL && s2 == NULL)
+return (NULL);
 
 len1 = strlen(s1);
 len2 = strlen(s2);
