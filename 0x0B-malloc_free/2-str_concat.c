@@ -17,9 +17,9 @@ char *p;
 int x;
 
 if (s1 == NULL)
-return (NULL);
+s1 = "";
 if (s2 == NULL)
-return (NULL);
+s2 = "";
 
 len1 = strlen(s1);
 len2 = strlen(s2);
