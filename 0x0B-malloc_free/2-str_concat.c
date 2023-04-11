@@ -40,7 +40,7 @@ p[i] = s2[j];
 j++;
 i++;
 }
-p[i] = NULL;
+p[i] = '\0';
 
 return (p);
 }
