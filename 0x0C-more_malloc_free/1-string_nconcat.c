@@ -20,7 +20,7 @@ while (s2[lenS2] != '\0')
 lenS2++;
 if (s1 == NULL && s2 == NULL)
 return (NULL);
-else if (n < len2)
+else if (n < lenS2)
 p = malloc(sizeof(char) * (lenS1 + n + 1));
 else
 p = malloc(sizeof(char) * (lenS1 + lenS2 + 1));
