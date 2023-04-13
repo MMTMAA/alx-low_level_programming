@@ -10,10 +10,11 @@
 char *string_nconcat(char *s1, char *s2, unsigned int n)
 {
 char *p;
-unsigned int i = 0;
-unsigned int j = 0;
-unsigned int lenS1 = 0;
-unsigned int lenS2 = 0;
+unsigned int i = 0, j = 0, lenS1 = 0, lenS2 = 0;
+if (s1 == NULL)
+s1 = " ";
+else if (s2 == NULL)
+s2 = " ";
 while (s1[lenS1] != '\0')
 lenS1++;
 while (s2[lenS2] != '\0')
@@ -41,11 +42,7 @@ j++;
 else if (n >= lenS2)
 {
 while (i < (lenS1 + lenS2))
-{
-p[i] = s2[j];
-i++;
-j++;
-}
+p[i++] = s2[j++];
 }
 p[i] = '\0';
 return (p);
