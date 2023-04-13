@@ -24,7 +24,7 @@ blocks = size *	nmemb;
 
 while (i < blocks)
 {
-s[i] = 0;
+p[i] = 0;
 i++;
 }
 
