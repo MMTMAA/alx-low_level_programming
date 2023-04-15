@@ -2,6 +2,7 @@
 #include <stdlib.h>
 #include <ctype.h>
 #include <string.h>
+
 /**
  * main - dfdvdf
  * @argc: gdgd
@@ -10,26 +11,15 @@
  */
 int main(int argc, char *argv[])
 {
-int count1 = 1;
 int count2 = 1;
 int str2int;
 int sum = 0;
-
-
-while (count1 < argc)
-{
-if (!isdigit(argv[count1]))
-{
-printf("Error\n");
-return (1);
-}
-count1++;
-}
-
+unsigned int i = 1;
 while (count2 < argc)
 {
-str2int = atoi(argv[count2]);
+str2int = atoi(argv[i]);
 sum += str2int;
+i++;
 count2++;
 }
 
