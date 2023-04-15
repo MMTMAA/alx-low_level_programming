@@ -10,8 +10,8 @@
  */
 int main(int argc, char *argv[])
 {
-unsigned int count1 = 1;
-unsigned int count2 = 1;
+int count1 = 1;
+int count2 = 1;
 int str2int;
 int sum = 0;
 
@@ -19,8 +19,10 @@ int sum = 0;
 while (count1 < argc)
 {
 if (!isdigit(argv[count1]))
-printf("Error\n")
+{
+printf("Error\n");
 return (1);
+}
 count1++;
 }
 
