@@ -13,7 +13,7 @@ unsigned int i = 0;
 
 while (i < size)
 {
-action(array[i])
+action(array[i]);
 }
 
 }
