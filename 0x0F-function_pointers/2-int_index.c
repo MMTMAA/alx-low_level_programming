@@ -1,3 +1,5 @@
+#include <stdio.h>
+#include <stdlib.h>
 #include "function_pointers.h"
 /**
  * int_index - sdfgg
@@ -10,10 +12,8 @@ int int_index(int *array, int size, int (*cmp)(int))
 {
 int i = 0;
 
-if (array == NULL || size <= 0 || cmp == NULL)
+if (array != NULL || size > 0 || cmp != NULL)
 {
-return (-1);
-}
 
 while (i < size)
 {
@@ -23,5 +23,8 @@ return (i);
 
 i++;
 }
+
+}
+
 return (-1);
 }
