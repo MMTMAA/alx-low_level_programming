@@ -17,10 +17,10 @@ va_start(ap, n);
 
 for (i = 0; i < n; i++)
 {
-if (va_arg(ap, string) == NULL)
+if (va_arg(ap, char *) == NULL)
 printf("(nil)");
 else
-printf("%s", va_arg(ap, string));
+printf("%s", va_arg(ap, char *));
 if (separator != NULL && i != (n - 1))
 printf("%s", separator);
 
