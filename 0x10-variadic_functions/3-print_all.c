@@ -20,16 +20,16 @@ while (format[i] == 1)
 switch (format[i])
 {
 case 'c':
-printf("%c", va_arg(ap, char));
+printf("%c", va_arg(ap, int));
 break;
 case 'i':
-printf(" %d", va_arg(list, int));
+printf(" %d", va_arg(ap, int));
 break;
 case 'f':
-printf(" %f", va_arg(list, double));
+printf(" %f", va_arg(ap, double));
 break;
 case 's':
-p = va_arg(list, char *);
+p = va_arg(ap, char *);
 if (p == NULL)
 p = "(nil)";
 printf(" %s", p);
